@@ -4,9 +4,9 @@ Simple wrapper to RecyclerView adapter. Removes all the hassle with if checks in
 ### Example
 
 ```
-public class CoolAdapter extends SimpleRecyclerViewAdapter<CoolAdapter.Listener> {
+public class CoolAdapter extends SimpleRecyclerViewAdapter<CoolAdapter.MyListener> {
 
-  public interface Listener {
+  public interface MyListener {
     void onDoSomething(String something);
   }
   
@@ -16,7 +16,7 @@ public class CoolAdapter extends SimpleRecyclerViewAdapter<CoolAdapter.Listener>
       super(0, R.layout.my_id, FirstItem.FirstItemViewHolder.class);
     }
     
-    public static class FirstItemViewHolder extends SimpleViewHolder<FirstItem, Listener> {
+    public static class FirstItemViewHolder extends SimpleViewHolder<FirstItem, MyListener> {
     
       public FirstItemViewHolder(View itemView) {
         super(itemView);
@@ -24,7 +24,7 @@ public class CoolAdapter extends SimpleRecyclerViewAdapter<CoolAdapter.Listener>
       }
 
       @Override
-      public void onBind(@NonNull AdapterItem item, @NonNull Listener listener) {
+      public void onBind(@NonNull AdapterItem item, @NonNull MyListener listener) {
         // Bind views. See that listener is also in here.
       }
     }
