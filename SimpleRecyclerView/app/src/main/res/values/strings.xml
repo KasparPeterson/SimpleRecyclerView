@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SimpleRecyclerView</string>
+
+    <string name="adapter_item_first">I am first item</string>
+    <string name="adapter_item_second">I am second item</string>
+    <string name="adapter_item_click_me">Click me</string>
+
+</resources>
