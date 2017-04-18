@@ -16,12 +16,14 @@ public class CoolAdapter extends SimpleRecyclerViewAdapter<CoolAdapter.MyListene
     void onDoSomething(String something);
   }
   
+  // This has to be public as it is accessed from outside.
   public static class FirstItem extends SimpleAdapterItem {
   
     public FirstItem(String maybeNeedSomething??) {
       super(0, R.layout.my_id, FirstItem.FirstItemViewHolder.class);
     }
     
+    // This has to be public as it is accessed from outside.
     public static class FirstItemViewHolder extends SimpleViewHolder<FirstItem, MyListener> {
     
       public FirstItemViewHolder(View itemView) {
