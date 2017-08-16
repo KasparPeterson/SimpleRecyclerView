@@ -41,3 +41,8 @@ public class CoolAdapter extends SimpleRecyclerViewAdapter<CoolAdapter.MyListene
   public static class SecondItem....
 }
 ```
+
+### Download
+```
+compile 'com.kasparpeterson:simplerecyclerview:1.0.0'
+```
