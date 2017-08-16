@@ -9,7 +9,7 @@ Get's rid of:
 
 ### Example
 
-```
+```java
 public class CoolAdapter extends SimpleRecyclerViewAdapter<CoolAdapter.MyListener> {
 
   public interface MyListener {
