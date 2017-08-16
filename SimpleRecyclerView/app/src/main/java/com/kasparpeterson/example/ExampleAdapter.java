@@ -1,9 +1,12 @@
-package com.kasparpeterson.simplerecyclerview;
+package com.kasparpeterson.example;
 
 import android.support.annotation.NonNull;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.kasparpeterson.simplerecyclerview.SimpleAdapterItem;
+import com.kasparpeterson.simplerecyclerview.SimpleRecyclerViewAdapter;
 
 import java.util.List;
 

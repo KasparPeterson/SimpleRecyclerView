@@ -1,4 +1,4 @@
-package com.kasparpeterson.simplerecyclerview;
+package com.kasparpeterson.example;
 
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+
+import com.kasparpeterson.simplerecyclerview.SimpleAdapterItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,12 +36,12 @@ public class MainActivity extends AppCompatActivity {
         ExampleAdapter adapter = new ExampleAdapter(items, new ExampleAdapter.Listener() {
             @Override
             public void onFirstItemClicked(@NonNull String input) {
-                Log.e(TAG, "onFirstItemClicked, input: " + input);
+                Log.d(TAG, "onFirstItemClicked, input: " + input);
             }
 
             @Override
             public void onSecondItemClicked() {
-                Log.e(TAG, "onSecondItemClicked()");
+                Log.d(TAG, "onSecondItemClicked()");
             }
         });
 
