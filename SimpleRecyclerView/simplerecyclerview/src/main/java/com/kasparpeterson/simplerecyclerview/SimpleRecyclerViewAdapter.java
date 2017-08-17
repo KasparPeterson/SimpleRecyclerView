@@ -44,16 +44,13 @@ public class SimpleRecyclerViewAdapter<L>
             return viewTypes.get(viewType)
                     .getViewHolder(LayoutInflater.from(parent.getContext()), parent);
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
-
-        // TODO: eee what?
-        return null;
     }
 
     @Override
     public void onBindViewHolder(SimpleViewHolder holder, int position) {
-        // TODO: Has to be overridden but it is not called?
+        // This has to be overridden but it is actually never called by the system.
     }
 
     @Override
