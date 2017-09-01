@@ -42,6 +42,13 @@ public class CoolAdapter extends SimpleRecyclerViewAdapter<CoolAdapter.MyListene
 }
 ```
 
+### Using with ProGuard
+
+when using ProGuard you need to add following line to you proguard-rules.pro
+```
+-keep class * implements com.kasparpeterson.simplerecyclerview.** { *;}
+```
+
 ### Download
 ```
 compile 'com.kasparpeterson:simplerecyclerview:1.0.0'
