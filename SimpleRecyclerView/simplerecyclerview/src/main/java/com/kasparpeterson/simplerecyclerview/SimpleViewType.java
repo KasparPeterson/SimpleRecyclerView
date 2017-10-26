@@ -33,7 +33,8 @@ class SimpleViewType {
     SimpleRecyclerViewAdapter.SimpleViewHolder getViewHolder(LayoutInflater layoutInflater, ViewGroup parent) throws Exception {
         View view = getView(layoutInflater, parent);
         Class<?> klass = Class.forName(viewHolderClass.getName());
-        Constructor<?> constructor = klass.getConstructor(View.class);
+        Constructor<?> constructor = klass.getDeclaredConstructor(View.class);
+        constructor.setAccessible(true);
         return (SimpleRecyclerViewAdapter.SimpleViewHolder) constructor.newInstance(view);
     }
 
